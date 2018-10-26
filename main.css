@@ -1,6 +1,7 @@
 body, html {
     height: 100%;
     margin: 0;
+    box-sizing: border-box;
 }
 
 div{
@@ -63,35 +64,55 @@ h1{
 }
 
 /* Dopasowania wyglądu przycisków */
-.JoinButton{
-    font-size: 45px;
+a.JoinButton{
+    font-size: 35px;
     position: absolute;
     top: 520px;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 20px;
-    background-color: mediumpurple;
+    border-radius: 25px;
+    background-color: #7289DA;
     border: 0px;
     opacity: 0.9;
     width: 500px;
-
+    height: 60px;
+    padding-top: 20px;
+    text-align: right;
+    padding-right: 20px;
+    
 }
 
+.obrazPrzycisk{
+    font-size: 35px;
+    position: absolute;
+    top: 520px;
+    transform: translate(-50%, -50%);
+    margin-right: 100%;
+    margin-left: 39%;
+    height: 10%;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
 .JoinButton:hover{
-    animation: JoinButtonAnimation 3s infinite;
-    
-        
+    animation: JoinButtonAnimation 4s infinite;  
 }
 
 @keyframes JoinButtonAnimation{
     0%{
-        background-color: mediumpurple;
+        background-color: #7289DA;
+        color: #FFFFFF;
     }
     50%{
-        background-color: purple;
+        background-color: #FFFFFF;
+        color: #7289DA;
     }
     100%{
-        background-color: mediumpurple;
+        background-color: #7289DA;
+        color: #FFFFFF;
     }
 }
 
